@@ -63,6 +63,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dungeon">
         <activity
+            android:name=".LightActivity"
+            android:exported="false" />
+        <activity
             android:name=".TileActivity"
             android:exported="false" />
         <activity

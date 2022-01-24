@@ -6,4 +6,144 @@
     android:layout_height="match_parent"
     tools:context=".TileActivity">
 
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="Z" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="S" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="K" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="R" />
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="T" />
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="O" />
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="Q" />
+
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/button32"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="L" />
+
+        <Button
+            android:id="@+id/button33"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="I" />
+
+        <Button
+            android:id="@+id/button34"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/button41"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="F" />
+
+        <Button
+            android:id="@+id/button42"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/button43"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="N" />
+
+        <Button
+            android:id="@+id/button44"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="H" />
+    </GridLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
