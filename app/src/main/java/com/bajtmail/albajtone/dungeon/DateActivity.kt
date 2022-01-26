@@ -1,7 +1,9 @@
 package com.bajtmail.albajtone.dungeon
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import com.google.android.material.switchmaterial.SwitchMaterial
 import java.text.SimpleDateFormat
@@ -19,8 +21,11 @@ class DateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_date)
         val switch = findViewById<SwitchMaterial>(R.id.date_switch)
-        switch.setOnCheckedChangeListener { _, _ ->
-            toggleTrophy(checkDate())
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
+            switch.visibility = View.VISIBLE
+            switch.setOnCheckedChangeListener { _, _ ->
+                toggleTrophy(checkDate())
+            }
         }
     }
 
