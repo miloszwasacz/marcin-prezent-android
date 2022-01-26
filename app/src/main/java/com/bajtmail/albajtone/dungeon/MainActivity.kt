@@ -70,11 +70,8 @@ class MainActivity: AppCompatActivity() {
         val enterDungeonButton = findViewById<Button>(R.id.enter_button)
 
         enterDungeonButton.setOnClickListener {
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if(checkPermissions()) enterDungeon()
-                else requestPermissions()
-            }
-            else enterDungeon()
+            if(checkPermissions()) enterDungeon()
+            else requestPermissions()
         }
     }
 
@@ -95,14 +92,12 @@ class MainActivity: AppCompatActivity() {
         startActivity(intent)
     }
 
-    @RequiresApi(Build.VERSION_CODES.M)
     private fun checkPermissions(): Boolean {
         return permissions.all {
             checkSelfPermission(it) == PackageManager.PERMISSION_GRANTED
         }
     }
 
-    @RequiresApi(Build.VERSION_CODES.M)
     private fun requestPermissions() {
         requestPermissions(permissions.toTypedArray(), 1)
     }
